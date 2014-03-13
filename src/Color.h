@@ -15,10 +15,9 @@ public:
 public:
 	static const Color Yellow;
 
-	Color() {} // no need to do anything, members are zero-initialized
+	Color() ;// no need to do anything, members are zero-initialized
 
-	Color(uint8_t red, uint8_t green, uint8_t blue) :
-		r(red), g(green), b(blue) {}
+	Color(uint8_t red, uint8_t green, uint8_t blue) ;
 };
 
 #endif // COLOR_H

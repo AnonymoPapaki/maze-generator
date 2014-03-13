@@ -79,7 +79,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\Bitmap.cpp" />
     <ClCompile Include="..\..\src\Color.cpp" />
+    <ClCompile Include="..\..\src\Maze.cpp" />
     <ClCompile Include="..\..\src\MazeGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
