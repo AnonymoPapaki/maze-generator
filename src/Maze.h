@@ -1,7 +1,7 @@
 #ifndef MAZE_H_INCLUDED
 #define MAZE_H_INCLUDED
 
-#include "Color.h"
+
 #include "Bitmap.h"
 #include <stack>
 #include <sstream>
