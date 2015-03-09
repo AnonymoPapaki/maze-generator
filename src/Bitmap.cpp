@@ -65,20 +65,20 @@ void Bitmap::createFile(std::string fileName)
 
     struct bmp_header
     {
-           long size_of_file;
-           long reserve;
-           long offset_of_pixle_data;
-           long size_of_header;
-           long width;
-           long height;
-           short num_of_colour_plane;
-           short num_of_bit_per_pix;
-           long compression;
-           long size_of_pix_data;
-           long h_resolution;
-           long v_resolution;
-           long num_of_colour_in_palette;
-           long important_colours;
+           uint32_t size_of_file;
+		   uint32_t reserve;
+		   uint32_t offset_of_pixle_data;
+		   uint32_t size_of_header;
+		   uint32_t width;
+		   uint32_t height;
+		   uint32_t num_of_colour_plane : 16;
+		   uint32_t num_of_bit_per_pix : 16;
+		   uint32_t compression;
+		   uint32_t size_of_pix_data;
+		   uint32_t h_resolution;
+		   uint32_t v_resolution;
+		   uint32_t num_of_colour_in_palette;
+		   uint32_t important_colours;
 
     }
     HEADER;
